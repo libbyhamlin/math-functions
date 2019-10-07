@@ -26,6 +26,9 @@ Write a function called multiply() that takes in two numbers as arguments and re
 */
 
 export function multiply(a, b) {
+    const array = [];
+    array [0] = a * b;
+    array [1] = ''
 
 }
 
