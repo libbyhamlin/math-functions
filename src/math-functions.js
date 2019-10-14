@@ -63,6 +63,7 @@ export function sumAndMultiplyThreeNumbers(a, b, c) {
     array[1] = multiply(multiply(a, b)[0], c)[0];
     array[2] = `${a} and ${b} and ${c} sum to ${array[0]}.`;
     array[3] = `The product of ${a} and ${b} and ${c} is ${array[1]}.`;
+
     return array;
 }
 
@@ -85,8 +86,10 @@ to use the + operator for string concatenation.
 */
 
 export function sumArrayWithThreeNumbers(sumArr) {
-    const array = [];
-    array[0] = sum(sum(a, b)[0], c)[0];
+    const arr = [];
+    arr[0] = sum(sum(sumArr[0], sumArr[1])[0], sumArr[2])[0];
+    arr[1] = `The numbers ${sumArr} have a sum of ${arr[0]}.`;
+    return arr;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
@@ -108,8 +111,10 @@ This function should handle an array containing three elements. However,
 you may continue to use the + operator for string concatenation.
 */
 
-export function multiplyArrayWithThreeNumbers(multArr) {
+export function multiplyArrayWithThreeNumbers(a, b, c) {
   //eslint-disable-line
+    const array = [];
+    array[0] = multiply(multiply(a, b)[0], c)[0];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
@@ -131,14 +136,13 @@ This function should be dynamic, accepting an array of any length.
 
 export function multiplyAnyArray(dynamicArray) {
   //eslint-disable-line
-  ler i:
-  let myDynamicProduct = 1;
-  let length = dynamicArray.lenght;
-  for(i = 0; i < length; i++) {
-  myDynamicProduct = multiply(dynamicArray[i], myDynamicProduct) [0]; //the first [i] is two
+    let i;
+    let myDynamicProduct = 1;
+    let length = dynamicArray.lenght;
+    for(i = 0; i < length; i++) {
+        myDynamicProduct = multiply(dynamicArray[i], myDynamicProduct)[0]; //the first [i] is two
+    }
 }
-
-const stringOfProducts = 'The numbers
+const stringOfProducts = 'The numbers';
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
-// You're done! Submit the link to the repo following the instructions in Canvas.
-
+// You're done! Submit the link to the repo following the instructions in Canvas
