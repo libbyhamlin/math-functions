@@ -65,7 +65,7 @@ export function sumAndMultiplyThreeNumbers(a, b, c) {
     array[3] = `The product of ${a} and ${b} and ${c} is ${array[1]}.`;
 
     return array;
-}
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 // Don't forget to create a new branch for your work on the next question!
@@ -86,11 +86,15 @@ to use the + operator for string concatenation.
 */
 
 export function sumArrayWithThreeNumbers(sumArr) {
+
     const arr = [];
     arr[0] = sum(sum(sumArr[0], sumArr[1])[0], sumArr[2])[0];
     arr[1] = `The numbers ${sumArr} have a sum of ${arr[0]}.`;
     return arr;
-}
+
+    const array = [];
+    array[0] = sum(sum(a, b)[0], c)[0];
+
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 // Don't forget to create a new branch for your work on the next question!
